@@ -6,12 +6,14 @@ import { Entypo } from "@expo/vector-icons";
 const Search = ({ onSearch }) => {
   const [input, setInput] = useState("");
 
+  // handleSearch va a realizar un filtrado de los productos utilizando el valor guardado en "input"
   const handleSearch = () => {
     if (input) {
       onSearch(input);
     }
   };
 
+  //funcion que limpia el campo del input
   const removeInput = () => {
     setInput("");
   };
@@ -43,12 +45,14 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "flex-start",
+    width: '100%',
+    flex: 1
   },
   inputContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    width: "90%",
+    width: "100%",
     paddingTop: 10,
   },
   input: {
