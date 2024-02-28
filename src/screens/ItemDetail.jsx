@@ -24,6 +24,7 @@ const ItemDetail = ({ navigation, route }) => {
           />
           <View style={styles.textContainer}>
             <Text style={styles.descriptionText}>{product.title}</Text>
+            <Text style={styles.descriptionText}>{product.description}</Text>
             <Text style={styles.descriptionTextPrice}>${product.price}</Text>
             <Pressable style={styles.buy}>
               <Text style={styles.buyText}>Buy now</Text>
